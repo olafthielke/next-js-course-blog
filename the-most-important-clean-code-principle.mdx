@@ -1,0 +1,109 @@
+---
+title: 'The Most Important Clean Code Principle'
+date: '2023-01-03'
+tags: ['clean code', 'principle', 'clean code principles']
+---
+
+<CustomImage src="https://raw.githubusercontent.com/olafthielke/next-js-course-blog/main/images/clean-code-principle.png" alt="The Most Important Clean Code Principle" priority="true" />
+
+All code is dirty.
+
+By that, I mean messy and overly complicated.
+
+Well, almost all code.
+
+I occasionally read listings written by a craftsman, but it’s a rare treat.
+
+
+The first time I encountered authentic software craftsmanship, I was transfixed.
+
+I desperately wanted to write code like that!
+
+It was a magic moment: Before my eyes was software I could understand at a glance!
+
+
+At the time, my programming efforts produced convoluted results that even I had difficulty deciphering. Reading my functions felt like walking through knee-deep mud.
+
+
+When I read this person’s code, I knew I had crossed paths with an accomplished professional. Right then, my programming career took an unexpected turn: Writing software is more fun, easier to work with, and more productive when the code is crisp and clean.
+
+
+Programming should be an enjoyable activity, not feel like a death march.
+
+<CustomImage src="https://raw.githubusercontent.com/olafthielke/next-js-course-blog/main/images/clean-code-principle.png" alt="Dirty Code versus Clean Code. An illustration." />
+
+Clean Code versus Dirty Code. An illustration.
+In the subsequent weeks, I focused on writing cleaner software.
+
+
+Improving my code quality produced positive effects: I gained a reputation as a capable and thoughtful programmer.
+
+My internal motivation skyrocketed. I was again happy to be a software developer.
+
+
+How do you feel about code (your own and others)?
+
+Do you feel that reading and modifying most code is too hard?
+Do you wish programming was easier?
+Do you want to be happier as a software developer?
+If you answered Yes to all of these, then programming The Clean Code Way is for you:
+
+Your code will be easy to understand and modify,
+You’ll build a reputation as a dependable programmer,
+You’ll discover untapped enjoyment in programming.
+
+
+What’s not to love, right?
+
+
+Today, I want to share with you my ONE PRINCIPLE that, when consistently followed, produces shockingly beautiful code:
+
+
+# Keep It Simple.
+## Always. In Everything. As simple as possible.
+
+The goal is to write code so radially simple you should understand its behaviour as you read it [1].
+
+
+Think about what this would mean:
+
+- You wouldn’t need to read through the function listing multiple times. You’d get it the first time.
+- You would know in which part of the function to make the change.
+- Your life as a software developer would be so much easier. You would avoid those demanding slogs through tedious, convoluted function listings.
+
+How cool would that be?
+
+## Two Examples
+OK, let’s check out a couple of clean code examples, one in C# and one in TypeScript:
+
+### C#.NET Example
+Retrieve bank account transaction data via logged-in bank client (e.g. via bank API or website):
+
+<CustomImage src="https://raw.githubusercontent.com/olafthielke/next-js-course-blog/main/images/clean-code-example-csharp-getbanktransactions.jpg" alt="A Clean Code Example in C# - GetBankTransactions()." />
+
+This method retrieves a logged-in bank client, and then retrieves the account transactions in the requested data range. Naturally, much detail lies hidden in lower-level functions. At this high level, those details are not relevant; for example, how we authenticate with a particular bank’s API.
+
+Pretty clean, right?
+
+### TypeScript Example
+Validate an CustomerRegistration model:
+
+<CustomImage src="https://raw.githubusercontent.com/olafthielke/next-js-course-blog/main/images/clean-code-example-typescript-validate.jpg" alt="A Clean Code Example in TypeScript - validate()." />
+
+This method undertakes 2 validation actions: The passed-in reg instance validates itself, and we try to retrieve the customer by email address from the customerRepo and check whether it already exists.
+
+It’s clear what’s happening in this example too.
+
+​
+
+In both examples, the methods are appropriately named, so short and simple that their purpose is clear. Each delegates behaviour to lower-level functions.
+
+
+Did you like that?
+
+Do you want to learn how to write super-duper simple code like this?
+
+If so, then you're receiving the correct newsletter. 😉
+
+##### Footnotes: 
+[1] Sure, this is not always possible. Sometimes, a listing cannot be further simplified. Nonetheless, in my experience, opportunities to maximally clarify code are often not exploited.
